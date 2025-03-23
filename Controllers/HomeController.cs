@@ -76,7 +76,30 @@ public class HomeController : Controller
 
     public IActionResult Mood()
     {
-        var moods = _context.Moods.ToList();
+        var selectedArtistsString = HttpContext.Session.GetString("SelectedArtists");
+
+        if (string.IsNullOrEmpty(selectedArtistsString))
+        {
+            return RedirectToAction("Artist");
+        }
+
+        var selectedArtists = JsonConvert.DeserializeObject<List<int>>(selectedArtistsString);
+
+        Console.WriteLine("Selected Artists: " + string.Join(", ", selectedArtists));
+
+        var artists = _context.Artists
+            .Where(a => selectedArtists.Contains(a.ArtistID))
+            .ToList();
+
+        var artistMoods = artists.Select(a => a.Moods)
+            .SelectMany(m => m.Split(','))
+            .Distinct()
+            .ToList();
+        
+        var moods = _context.Moods
+            .Where(m => artistMoods.Contains(m.MoodID.ToString()))
+            .ToList();
+
         return View(moods);
     }
 

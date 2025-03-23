@@ -39,6 +39,10 @@ namespace MuSu.Data
                 .Property(a => a.GenreID)
                 .HasColumnName("genre_id");  
             
+            modelBuilder.Entity<Artist>()
+                .Property(a => a.Moods)
+                .HasColumnName("moods");  
+            
             // Moods
             modelBuilder.Entity<Mood>()
                 .ToTable("moods") 

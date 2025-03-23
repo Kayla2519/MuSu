@@ -11,20 +11,15 @@
         <button>Genre - - X</button>
     </form>
 
-    <form method="post" action="/Home/Artist">
-        @foreach (var artist in Model) 
+    <form action="/Home/SelectArtists" method="post">
+        @foreach (var artist in Model)
         {
-            <div>
-                <input type="checkbox" id="artist@artist.ArtistID" name="selectedArtist" value="@artist.ArtistID" />
-                <label for="artist@artist.ArtistID">@artist.ArtistName</label>
-            </div>
+            <label>
+                <input type="checkbox" name="selectedArtists" value="@artist.ArtistID" />
+                @artist.ArtistName
+            </label><br />
         }
 
-        <button type="submit">Continue</button>
-    </form>
-    
-
-    <form action="/Home/Mood" method="get">
         <button type="submit">Continue</button>
     </form>
 </div>
