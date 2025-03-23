@@ -1,0 +1,13 @@
+When Using Github:
+
+
+To push changes:
+
+git add .
+git commit -m "Describe your changes"
+git push
+
+
+To pull changes:
+
+git pull
