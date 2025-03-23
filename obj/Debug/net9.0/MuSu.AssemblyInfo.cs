@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MuSu")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce7a117d7cdbbe9d53fdd33e1655087d40f8a598")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81abf5ac99b13151f0c94ebac3d4a19f64642422")]
 [assembly: System.Reflection.AssemblyProductAttribute("MuSu")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MuSu")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

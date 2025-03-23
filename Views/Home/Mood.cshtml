@@ -1,3 +1,5 @@
+@using MuSu.Data 
+
 @{
     ViewData["Title"] = "Mood";
 }
@@ -13,18 +15,12 @@
         <button>Artist - - X</button>
     </form>
 
-
-    <form>
-        <button>Mood 1</button>
-    </form>
-
-    <form>
-        <button>Mood 2</button>
-    </form>
-
-    <form>
-        <button>Mood 3</button>
-    </form>
+    @foreach (var mood in Model) 
+    {
+        <form method="get" action="/Home/Recommendation">
+            <button type="submit" name="moodId" value="@mood.MoodID">@mood.MoodName</button>
+        </form>
+    }
 
     <form action="/Home/Recommendation" method="get">
         <button type="submit">Continue</button>
