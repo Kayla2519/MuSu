@@ -1,4 +1,7 @@
 @using MuSu.Data 
+@using System.Linq  
+
+@model List<Song>  
 
 @{
     ViewData["Title"] = "Recommendation";
@@ -19,18 +22,26 @@
         <button>Mood - - X</button>
     </form>
 
-    <h2>Song Title - Artist</h2>
-    <p>Open In:</p>
-    
-    <form>
-        <button>YouTube</button>
-    </form>
+    @if (Model != null && Model.Any())
+    {
+        <h2>Recommended Song:</h2>
+        <p><strong>@Model.FirstOrDefault()?.SongTitle</strong> - @Model.FirstOrDefault()?.Artist?.ArtistName</p>
+        <p>Open In:</p>
 
-    <form>
-        <button>Spotify</button>
-    </form>
+        <form>
+            <button>YouTube</button>
+        </form>
 
-    <form>
-        <button>Apple Music</button>
-    </form>
+        <form>
+            <button>Spotify</button>
+        </form>
+
+        <form>
+            <button>Apple Music</button>
+        </form>
+    }
+    else
+    {
+        <p>No recommendations available for the selected moods.</p>
+    }
 </div>

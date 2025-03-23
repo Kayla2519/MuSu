@@ -15,14 +15,15 @@
         <button>Artist - - X</button>
     </form>
 
-    @foreach (var mood in Model) 
-    {
-        <form method="get" action="/Home/Recommendation">
-            <button type="submit" name="moodId" value="@mood.MoodID">@mood.MoodName</button>
-        </form>
-    }
+    <form action="/Home/SelectMoods" method="post">
+        @foreach (var mood in Model)
+        {
+            <label>
+                <input type="checkbox" name="selectedMoods" value="@mood.MoodID" />
+                @mood.MoodName
+            </label><br />
+        }
 
-    <form action="/Home/Recommendation" method="get">
         <button type="submit">Continue</button>
     </form>
 </div>

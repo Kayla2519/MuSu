@@ -53,6 +53,10 @@ namespace MuSu.Data
                 .Property(m => m.MoodName)
                 .HasColumnName("name");  
 
+            modelBuilder.Entity<Mood>()
+                .Property(m => m.Songs)
+                .HasColumnName("songs");  
+
             // Recommendations
             modelBuilder.Entity<Recommendation>()
                 .ToTable("recommendations") 

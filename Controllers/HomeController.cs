@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using MuSu.Models;
 using MuSu.Data;
 using Newtonsoft.Json;
+using Microsoft.EntityFrameworkCore;
 
 namespace MuSu.Controllers;
 
@@ -103,10 +104,51 @@ public class HomeController : Controller
         return View(moods);
     }
 
+    [HttpPost]
+    public IActionResult SelectMoods(List<int> selectedMoods)
+    {
+        if (selectedMoods == null || !selectedMoods.Any())
+        {
+            return BadRequest("Please select at least one mood.");
+        }
+
+        HttpContext.Session.SetString("SelectedMoods", JsonConvert.SerializeObject(selectedMoods));
+
+        return RedirectToAction("Recommendation");
+    }
+
     public IActionResult Recommendation()
     {
-        var recommendations = _context.Recommendations.ToList();
-        return View(recommendations);
+        var selectedMoodsString = HttpContext.Session.GetString("SelectedMoods");
+
+        if (string.IsNullOrEmpty(selectedMoodsString))
+        {
+            return RedirectToAction("Mood");
+        }
+
+        var selectedMoods = JsonConvert.DeserializeObject<List<int>>(selectedMoodsString);
+
+        Console.WriteLine("Selected Moods: " + string.Join(", ", selectedMoods));
+
+        var moods = _context.Moods
+            .Where(m => selectedMoods.Contains(m.MoodID))
+            .ToList();
+
+        var moodSongIds = moods
+            .SelectMany(m => m.Songs.Split(',') 
+            .Select(s => int.TryParse(s, out int songId) ? songId : (int?)null) 
+            .Where(id => id.HasValue) 
+            .Select(id => id.Value)) 
+            .Distinct()
+            .ToList();
+
+        
+        var songs = _context.Songs
+            .Where(s => moodSongIds.Contains(s.SongID))
+            .Include(s => s.Artist) 
+            .ToList();
+
+        return View(songs);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
