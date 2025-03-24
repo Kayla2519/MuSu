@@ -8,8 +8,9 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Your Recommendation</h1>
+    <h1 class="display-3">Your Recommendation</h1>
 
+    <!-- Needs to be fixed -- Supposed to display the chosen genres 
     <form>
         <button>Genre - - X</button>
     </form>
@@ -20,25 +21,26 @@
 
     <form>
         <button>Mood - - X</button>
-    </form>
+    </form>--->
 
     @if (Model != null && Model.Any())
     {
-        <h2>Recommended Song:</h2>
-        <p><strong>@Model.FirstOrDefault()?.SongTitle</strong> - @Model.FirstOrDefault()?.Artist?.ArtistName</p>
+        <p style="font-size: 1.5rem; padding-bottom: 50px;"><strong>@Model.FirstOrDefault()?.SongTitle</strong> - @Model.FirstOrDefault()?.Artist?.ArtistName</p>
         <p>Open In:</p>
 
-        <form>
-            <button>YouTube</button>
-        </form>
+        <div class="d-flex justify-content-center gap-3">
+            <form>
+                <button>YouTube</button>
+            </form>
 
-        <form>
-            <button>Spotify</button>
-        </form>
+            <form>
+                <button>Spotify</button>
+            </form>
 
-        <form>
-            <button>Apple Music</button>
-        </form>
+            <form>
+                <button>Apple Music</button>
+            </form>
+        </div>
     }
     else
     {

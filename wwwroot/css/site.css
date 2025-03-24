@@ -32,16 +32,30 @@ main {
 h1 {
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 20px;
+}
+
+h1.display-4 {
+  padding-top: 100px;
+  font-size: 6rem;
+}
+
+h1.display-3 {
+  font-size: 4rem !important; 
+  padding-top: 60px !important; 
+  padding-bottom: 40px !important;
+}
+
+h2 {
+  padding-bottom: 50px;
 }
 
 button {
   background: #8DA1B9;
   color: white;
   border: none;
-  padding: 12px 20px;
-  font-size: 1rem;
-  border-radius: 25px;
+  padding: 15px 25px;
+  font-size: 1.25rem;
+  border-radius: 28px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
@@ -49,6 +63,13 @@ button {
 button:hover {
   background: #7897bc;
   transform: scale(1.05);
+}
+
+.large-button {
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 form {
