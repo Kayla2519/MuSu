@@ -130,6 +130,13 @@ public class HomeController : Controller
 
         Console.WriteLine("Selected Moods: " + string.Join(", ", selectedMoods));
 
+        var selectedArtistsString = HttpContext.Session.GetString("SelectedArtists");
+        var selectedArtists = string.IsNullOrEmpty(selectedArtistsString)
+            ? new List<int>()
+            : JsonConvert.DeserializeObject<List<int>>(selectedArtistsString);
+        
+        Console.WriteLine("Selected Artists: " + string.Join(", ", selectedArtists));
+
         var moods = _context.Moods
             .Where(m => selectedMoods.Contains(m.MoodID))
             .ToList();
@@ -144,7 +151,7 @@ public class HomeController : Controller
 
         
         var songs = _context.Songs
-            .Where(s => moodSongIds.Contains(s.SongID))
+            .Where(s => moodSongIds.Contains(s.SongID) && selectedArtists.Contains(s.ArtistID))
             .Include(s => s.Artist) 
             .ToList();
 

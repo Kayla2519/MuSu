@@ -86,6 +86,7 @@ label {
 input[type="checkbox"] {
   transform: scale(1.2);
   margin-right: 10px;
+  accent-color: #8DA1B9;
 }
 
 .container {
