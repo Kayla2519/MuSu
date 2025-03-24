@@ -10,7 +10,6 @@ body {
   min-height: 100%;
   background: linear-gradient(135deg, #d39a9a, #250505);
   color: white;
-  font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -50,22 +49,24 @@ h2 {
 }
 
 button {
-  background: #8DA1B9;
-  color: white;
+  background-color: rgb(255, 220, 220); 
+  color:rgb(87, 49, 49);
   border: none;
   padding: 15px 25px;
   font-size: 1.25rem;
   border-radius: 28px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.255);
 }
 
 button:hover {
-  background: #7897bc;
+  background: rgb(255, 189, 189);
   transform: scale(1.05);
 }
 
 .large-button {
+  background: rgb(255, 192, 192);
   padding: 15px 30px;
   font-size: 1.5rem;
   border-radius: 30px;
@@ -86,7 +87,7 @@ label {
 input[type="checkbox"] {
   transform: scale(1.2);
   margin-right: 10px;
-  accent-color: #8DA1B9;
+  accent-color: rgb(255, 220, 220);
 }
 
 .container {

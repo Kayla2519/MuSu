@@ -101,6 +101,18 @@ namespace MuSu.Data
                 .Property(s => s.MoodID)
                 .HasColumnName("mood_id");  
             
+            modelBuilder.Entity<Song>()
+                .Property(s => s.YouTubeUrl)
+                .HasColumnName("youtube_url");  
+            
+            modelBuilder.Entity<Song>()
+                .Property(s => s.SpotifyUrl)
+                .HasColumnName("spotify_url");  
+            
+            modelBuilder.Entity<Song>()
+                .Property(s => s.AppleMusicUrl)
+                .HasColumnName("apple_music_url");  
+            
             // Users
             modelBuilder.Entity<User>()
                 .ToTable("users") 
