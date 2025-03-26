@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kw8uCLdO8bOXe0LJyG5OZqvK9VJHMEPy4K/rAKlbR6Q=",
+  "Hash": "Z1eI9rD8dGJmSs1iXYWVyyU5An/niIFWFjG3wuAjS6Y=",
   "Source": "MuSu",
   "BasePath": "_content/MuSu",
   "Mode": "Default",
@@ -1151,12 +1151,12 @@
       "OriginalItemSpec": "C:\\Users\\Kayla\\MuSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Kayla\\MuSu\\obj\\Debug\\net9.0\\compressed\\uble2suy5l-b9kw71gdu0.gz",
+      "Identity": "C:\\Users\\Kayla\\MuSu\\obj\\Debug\\net9.0\\compressed\\uble2suy5l-g4ersnb8ct.gz",
       "SourceId": "MuSu",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Kayla\\MuSu\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/MuSu",
-      "RelativePath": "css/site#[.{fingerprint=b9kw71gdu0}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=g4ersnb8ct}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1165,8 +1165,8 @@
       "RelatedAsset": "C:\\Users\\Kayla\\MuSu\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "xbwwrraldb",
-      "Integrity": "U2062tTNe1yPUgUgW+h1thiLYrDbJfO1O76yqHUdl8E=",
+      "Fingerprint": "ul5j25042y",
+      "Integrity": "Ihk5ylsPFqoUK8pi+vknBGs/gmTboZ+pyeum0Ygox1w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Kayla\\MuSu\\wwwroot\\css\\site.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b9kw71gdu0",
-      "Integrity": "j3mtsZeeTT4I0xKzIPVI+5ci+FhSXtbrBo96lUJvkSU=",
+      "Fingerprint": "g4ersnb8ct",
+      "Integrity": "wHdiOb53qXi7R7C4d3Nt9d1opstdmdz18MnvA3PFTzc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -2728,13 +2728,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.b9kw71gdu0.css",
-      "AssetFile": "C:\\Users\\Kayla\\MuSu\\obj\\Debug\\net9.0\\compressed\\uble2suy5l-b9kw71gdu0.gz",
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\Kayla\\MuSu\\obj\\Debug\\net9.0\\compressed\\uble2suy5l-g4ersnb8ct.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001522070015"
+          "Quality": "0.001555209953"
         }
       ],
       "ResponseHeaders": [
@@ -2744,19 +2744,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "656"
+          "Value": "642"
         },
         {
           "Name": "ETag",
-          "Value": "\"U2062tTNe1yPUgUgW+h1thiLYrDbJfO1O76yqHUdl8E=\""
+          "Value": "\"Ihk5ylsPFqoUK8pi+vknBGs/gmTboZ+pyeum0Ygox1w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 19:57:50 GMT"
+          "Value": "Mon, 24 Mar 2025 20:01:01 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -2772,26 +2772,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j3mtsZeeTT4I0xKzIPVI+5ci+FhSXtbrBo96lUJvkSU=\""
+          "Value": "W/\"wHdiOb53qXi7R7C4d3Nt9d1opstdmdz18MnvA3PFTzc=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "b9kw71gdu0"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-j3mtsZeeTT4I0xKzIPVI+5ci+FhSXtbrBo96lUJvkSU="
+          "Value": "sha256-wHdiOb53qXi7R7C4d3Nt9d1opstdmdz18MnvA3PFTzc="
         }
       ]
     },
     {
-      "Route": "css/site.b9kw71gdu0.css",
+      "Route": "css/site.css",
       "AssetFile": "C:\\Users\\Kayla\\MuSu\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2801,7 +2793,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1603"
+          "Value": "1587"
         },
         {
           "Name": "Content-Type",
@@ -2809,11 +2801,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j3mtsZeeTT4I0xKzIPVI+5ci+FhSXtbrBo96lUJvkSU=\""
+          "Value": "\"wHdiOb53qXi7R7C4d3Nt9d1opstdmdz18MnvA3PFTzc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 19:57:50 GMT"
+          "Value": "Mon, 24 Mar 2025 20:01:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wHdiOb53qXi7R7C4d3Nt9d1opstdmdz18MnvA3PFTzc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "C:\\Users\\Kayla\\MuSu\\obj\\Debug\\net9.0\\compressed\\uble2suy5l-g4ersnb8ct.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "642"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ihk5ylsPFqoUK8pi+vknBGs/gmTboZ+pyeum0Ygox1w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 20:01:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ihk5ylsPFqoUK8pi+vknBGs/gmTboZ+pyeum0Ygox1w="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.g4ersnb8ct.css",
+      "AssetFile": "C:\\Users\\Kayla\\MuSu\\obj\\Debug\\net9.0\\compressed\\uble2suy5l-g4ersnb8ct.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001555209953"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "642"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ihk5ylsPFqoUK8pi+vknBGs/gmTboZ+pyeum0Ygox1w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 20:01:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"wHdiOb53qXi7R7C4d3Nt9d1opstdmdz18MnvA3PFTzc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g4ersnb8ct"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wHdiOb53qXi7R7C4d3Nt9d1opstdmdz18MnvA3PFTzc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.g4ersnb8ct.css",
+      "AssetFile": "C:\\Users\\Kayla\\MuSu\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1587"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wHdiOb53qXi7R7C4d3Nt9d1opstdmdz18MnvA3PFTzc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 20:01:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2823,7 +2960,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9kw71gdu0"
+          "Value": "g4ersnb8ct"
         },
         {
           "Name": "label",
@@ -2831,13 +2968,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j3mtsZeeTT4I0xKzIPVI+5ci+FhSXtbrBo96lUJvkSU="
+          "Value": "sha256-wHdiOb53qXi7R7C4d3Nt9d1opstdmdz18MnvA3PFTzc="
         }
       ]
     },
     {
-      "Route": "css/site.b9kw71gdu0.css.gz",
-      "AssetFile": "C:\\Users\\Kayla\\MuSu\\obj\\Debug\\net9.0\\compressed\\uble2suy5l-b9kw71gdu0.gz",
+      "Route": "css/site.g4ersnb8ct.css.gz",
+      "AssetFile": "C:\\Users\\Kayla\\MuSu\\obj\\Debug\\net9.0\\compressed\\uble2suy5l-g4ersnb8ct.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2846,7 +2983,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "656"
+          "Value": "642"
         },
         {
           "Name": "Content-Type",
@@ -2854,11 +2991,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"U2062tTNe1yPUgUgW+h1thiLYrDbJfO1O76yqHUdl8E=\""
+          "Value": "\"Ihk5ylsPFqoUK8pi+vknBGs/gmTboZ+pyeum0Ygox1w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 19:57:50 GMT"
+          "Value": "Mon, 24 Mar 2025 20:01:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2876,7 +3013,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9kw71gdu0"
+          "Value": "g4ersnb8ct"
         },
         {
           "Name": "label",
@@ -2884,144 +3021,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-U2062tTNe1yPUgUgW+h1thiLYrDbJfO1O76yqHUdl8E="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\Kayla\\MuSu\\obj\\Debug\\net9.0\\compressed\\uble2suy5l-b9kw71gdu0.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001522070015"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "656"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"U2062tTNe1yPUgUgW+h1thiLYrDbJfO1O76yqHUdl8E=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 19:57:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"j3mtsZeeTT4I0xKzIPVI+5ci+FhSXtbrBo96lUJvkSU=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-j3mtsZeeTT4I0xKzIPVI+5ci+FhSXtbrBo96lUJvkSU="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\Kayla\\MuSu\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1603"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"j3mtsZeeTT4I0xKzIPVI+5ci+FhSXtbrBo96lUJvkSU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 19:57:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-j3mtsZeeTT4I0xKzIPVI+5ci+FhSXtbrBo96lUJvkSU="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\Kayla\\MuSu\\obj\\Debug\\net9.0\\compressed\\uble2suy5l-b9kw71gdu0.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "656"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"U2062tTNe1yPUgUgW+h1thiLYrDbJfO1O76yqHUdl8E=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 19:57:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-U2062tTNe1yPUgUgW+h1thiLYrDbJfO1O76yqHUdl8E="
+          "Value": "sha256-Ihk5ylsPFqoUK8pi+vknBGs/gmTboZ+pyeum0Ygox1w="
         }
       ]
     },
