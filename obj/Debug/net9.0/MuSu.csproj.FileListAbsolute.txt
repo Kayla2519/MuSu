@@ -233,3 +233,4 @@ C:\Users\Kayla\MuSu\bin\Debug\net9.0\Newtonsoft.Json.dll
 C:\Users\Kayla\MuSu\obj\Debug\net9.0\compressed\py62eddrpy-13bo3getig.gz
 C:\Users\Kayla\MuSu\obj\Debug\net9.0\compressed\bek0etvov1-13bo3getig.gz
 C:\Users\Kayla\MuSu\obj\Debug\net9.0\compressed\uble2suy5l-g4ersnb8ct.gz
+C:\Users\Kayla\MuSu\bin\Debug\net9.0\MuSu_DB.json

@@ -1,51 +1,40 @@
-@using MuSu.Data 
-@using System.Linq  
+@using MuSu.Data
+@using System.Linq
 
-@model List<Song>  
+@model List<Song>
 
 @{
     ViewData["Title"] = "Recommendation";
+    var random = new Random();
+    var randomSong = Model != null && Model.Any() ? Model[random.Next(Model.Count)] : null;
 }
 
 <div class="text-center">
     <h1 class="display-3">Your Recommendation</h1>
 
-    <!-- Needs to be fixed -- Supposed to display the chosen genres 
-    <form>
-        <button>Genre - - X</button>
-    </form>
-    
-    <form>
-        <button>Artist - - X</button>
-    </form>
-
-    <form>
-        <button>Mood - - X</button>
-    </form>--->
-
-    @if (Model != null && Model.Any())
+    @if (randomSong != null)
     {
-        <p style="font-size: 1.5rem; padding-bottom: 50px;"><strong>@Model.FirstOrDefault()?.SongTitle</strong> - @Model.FirstOrDefault()?.Artist?.ArtistName</p>
+        <p style="font-size: 1.5rem; padding-bottom: 50px;"><strong>@randomSong.SongTitle</strong> - @randomSong.Artist?.ArtistName</p>
         <p>Open In:</p>
 
         <div class="d-flex justify-content-center gap-3">
-            @if (!string.IsNullOrEmpty(Model.FirstOrDefault()?.YouTubeUrl))
+            @if (!string.IsNullOrEmpty(randomSong.YouTubeUrl))
             {
-                <form action="@Model.FirstOrDefault()?.YouTubeUrl" method="get" target="_blank">
+                <form action="@randomSong.YouTubeUrl" method="get" target="_blank">
                     <button type="submit">YouTube</button>
                 </form>
             }
 
-            @if (!string.IsNullOrEmpty(Model.FirstOrDefault()?.SpotifyUrl))
+            @if (!string.IsNullOrEmpty(randomSong.SpotifyUrl))
             {
-                <form action="@Model.FirstOrDefault()?.SpotifyUrl" method="get" target="_blank">
+                <form action="@randomSong.SpotifyUrl" method="get" target="_blank">
                     <button type="submit">Spotify</button>
                 </form>
             }
 
-            @if (!string.IsNullOrEmpty(Model.FirstOrDefault()?.AppleMusicUrl))
+            @if (!string.IsNullOrEmpty(randomSong.AppleMusicUrl))
             {
-                <form action="@Model.FirstOrDefault()?.AppleMusicUrl" method="get" target="_blank">
+                <form action="@randomSong.AppleMusicUrl" method="get" target="_blank">
                     <button type="submit">Apple Music</button>
                 </form>
             }
